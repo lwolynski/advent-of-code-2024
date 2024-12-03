@@ -18,6 +18,16 @@ with open("input.txt", "r") as input:
         print(listOfNumbers)
         if isSorted(listOfNumbers) and checkDiff(listOfNumbers):
           howManySafe = howManySafe + 1
+          continue
+        else:
+            print(f"NOT SAFE {listOfNumbers}")    
+            for i in range(len(listOfNumbers)):
+                removed_element = listOfNumbers.pop(i)
+                print(f"REMOVED {removed_element}. List: {listOfNumbers}")
+                if isSorted(listOfNumbers) and checkDiff(listOfNumbers):
+                    howManySafe = howManySafe + 1
+                    break
+                listOfNumbers.insert(i, removed_element)
 
 
 print(howManySafe)
