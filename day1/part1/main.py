@@ -1,10 +1,3 @@
-# Get data -> two variables, jedna lista, druga lista 
-
-# sortujemy te listy 
-# lewa od najwiekszej do najmniejszej
-# prawa od najmniejszej do najwiekszej
-
-# liczmyy roznice miedzy lewa[0] i prawa[0] i dodajemy  ja do zmiennej totalDistance
 leftList = []
 rightList = []
 totalDistance = 0
